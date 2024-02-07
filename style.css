@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.gamecontainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("background.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+
+}
+.gameover{
+    visibility: hidden;
+}
+.man{
+    background-image: url(man-removebg-preview.png);
+    background-repeat: no-repeat;
+    width:100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    bottom: 15%;
+}
+.dragon{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    width: 226px;
+    height: 150px;
+    background-size: cover;
+    position: absolute;
+    bottom: 10.4%;
+    left: 82%;;
+    
+}
+.dragonAnimation{
+    animation: Dragonanimation 5s linear infinite;
+}
+.animateMan{
+    animation: man 1.5s linear;
+}
+@keyframes man {
+    0%{
+        bottom: 15%;
+    }
+    50%{
+        bottom: 433px;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+@keyframes Dragonanimation {
+    0%{
+        left: 82%;
+    }
+    100%{
+        left: -10vw;
+    }
+}
